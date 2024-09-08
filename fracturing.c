@@ -18,12 +18,13 @@ int main (int argc, char **argv) {
     calculateHeight();
      return 0;
 }
-
+// Bonus 
 double askForUserInput() {
     double value;
     scanf("%lf", &value);
     return value;
 }
+// Calculate distance 
 double calculateDistance() {
     double x1, y1, x2, y2, distance;
     
@@ -46,20 +47,18 @@ double calculateDistance() {
    return distance;
    
 }
-
+// Calculate Perimeter 
 double calculatePerimeter() {
     double distance = calculateDistance();
     double perimeter = 2 * distance; 
     
     printf("The perimeter of the city encompassed by your request is %lf\n", perimeter);
     
-    // Difficulty rating, adjust as necessary
+   
     return 2.0;
 }
 
-// Calculate the area (assuming width * height for simplicity)
-
-// Calculate the width (difference in x-coordinates)
+// Calculate width 
 double calculateWidth() {
     double x1, x2, width;
     
@@ -77,8 +76,7 @@ double calculateWidth() {
     // Difficulty rating, adjust as necessary
     return 2.0;
 }
-
-// Calculate the height (difference in y-coordinates)
+// Calculate Height 
 double calculateHeight() {
     double y1, y2, height;
     
@@ -95,6 +93,7 @@ double calculateHeight() {
     
     // Difficulty rating, adjust as necessary
     return 2.0;
+
 }
 double calculateArea() {
     double width = calculateWidth();
@@ -103,6 +102,5 @@ double calculateArea() {
     
     printf("The area of the city encompassed by your request is %lf\n", area);
     
-    // Difficulty rating, adjust as necessary
     return 1.0;
 }
