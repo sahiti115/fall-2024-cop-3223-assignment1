@@ -16,6 +16,7 @@ int main (int argc, char **argv) {
     calculateHeight();
      return 0;
 }
+
 double askForUserInput() {
     double value;
     scanf("%lf", &value);
