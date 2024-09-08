@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <math.h> 
 
+#define PI 3.14159 
+
 double calculateDistance();
 double calculatePerimeter();
 double calculateArea();
