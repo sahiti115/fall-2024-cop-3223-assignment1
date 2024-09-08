@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+double calculateDistance();
+double calculatePerimeter();
+double calculateArea();
+double calculateWidth();
+double calculateHeight();
+double askForUserInput();
+
 int main (int argc, char **argv) {
     calculateDistance();
     calculatePerimeter();
