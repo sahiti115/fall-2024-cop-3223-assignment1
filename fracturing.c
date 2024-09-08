@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h> 
 
 double calculateDistance();
 double calculatePerimeter();
@@ -32,14 +33,15 @@ double calculateDistance() {
     x2 = askForUserInput();
     printf("Enter y2: ");
     y2 = askForUserInput();
-    
-    distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+   
+    distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2)); 
     
     printf("Point #1 : x1 = %lf; y1 = %lf\n", x1, y1);
     printf("Point #2 : x2 = %lf; y2 = %lf\n", x2, y2);
     printf("The distance between the two points is %lf\n", distance);
-    
-    return distance;
+
+   return distance;
+   
 }
 
 double calculatePerimeter() {
