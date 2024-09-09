@@ -50,8 +50,8 @@ double calculateDistance() {
    
     distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2)); 
     
-    printf("Point #1 : x1 = %lf; x2 = %lf\n", x1, x2);
-    printf("Point #2 : y1 = %lf; y2 = %lf\n", y1, y2);
+    printf("Point #1 : x1 = %.2f\n; x2 = %.2f\n", x1, x2);
+    printf("Point #2 : y1 = %.2f; y2 = %.2f\n", y1, y2);
     printf("The distance between the two points is %.2f\n", distance);
 
    return distance;
@@ -62,7 +62,7 @@ double calculatePerimeter() {
     double distance = calculateDistance();
     double perimeter = 2 * distance; 
     
-    printf("The perimeter of the city encompassed by your request is %lf\n", perimeter);
+    printf("The perimeter of the city encompassed by your request is %.2f\n", perimeter);
     
    
     return 2.0;
@@ -79,9 +79,9 @@ double calculateWidth() {
     
     width = fabs(x2 - x1);
     
-    printf("Point #1 entered: x1 = %lf\n", x1);
-    printf("Point #2 entered: x2 = %lf\n", x2);
-    printf("The width of the city encompassed by your request is %lf\n", width);
+    printf("Point #1 entered: x1 = %.2f\n", x1);
+    printf("Point #2 entered: x2 = %.2f\n", x2);
+    printf("The width of the city encompassed by your request is %.2f\n", width);
     
     // Difficulty rating, adjust as necessary
     return 2.0;
@@ -97,9 +97,9 @@ double calculateHeight() {
     
     height = fabs(y2 - y1);
     
-    printf("Point #1 entered: y1 = %lf\n", y1);
-    printf("Point #2 entered: y2 = %lf\n", y2);
-    printf("The height of the city encompassed by your request is %lf\n", height);
+    printf("Point #1 entered: y1 = %.2f\n", y1);
+    printf("Point #2 entered: y2 = %.2f\n", y2);
+    printf("The height of the city encompassed by your request is %.2f\n", height);
     
     // Difficulty rating, adjust as necessary
     return 2.0;
@@ -110,7 +110,7 @@ double calculateArea() {
     double height = calculateHeight();
     double area = width * height;
     
-    printf("The area of the city encompassed by your request is %lf\n", area);
+    printf("The area of the city encompassed by your request is %.2f\n", area);
     
     return 1.0;
 }
