@@ -41,7 +41,7 @@ double calculateDistance() {
     printf("Enter x1: ");
     x1 = askForUserInput();
     printf("Enter x1: ");
-    x1 = askForUserInput();
+    x2= askForUserInput();
     
     printf("Enter y1: ");
     y1 = askForUserInput();
