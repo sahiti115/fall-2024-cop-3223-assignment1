@@ -85,6 +85,7 @@ double calculateWidth() {
     
     return 2.0;
 }
+
 // Calculate Height 
 double calculateHeight() {
     double y1, y2, height;
@@ -104,6 +105,7 @@ double calculateHeight() {
     return 2.0;
 
 }
+// calculate area
 double calculateArea() {
     double width = calculateWidth();
     double height = calculateHeight();
