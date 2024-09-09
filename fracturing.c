@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include <math.h> 
 
-#define PI 3.14159 
+#define PI 3.14159 // Define PI
 
 double calculateDistance();
 double calculatePerimeter();
@@ -21,14 +21,14 @@ double calculateHeight();
 double askForUserInput();
 
 int main (int argc, char **argv) {
-    calculateDistance();
+    calculateDistance(); // defining variables 
     calculatePerimeter();
     calculateArea();
     calculateWidth();
     calculateHeight();
      return 0;
 }
-// Bonus 
+// Input users value 
 double askForUserInput() {
     double value;
     scanf("%lf", &value);
@@ -37,12 +37,12 @@ double askForUserInput() {
 // Calculate distance 
 double calculateDistance() {
     double x1, x2, y1, y2, distance;
-    
+    //Prompt user for the first point coordinates
     printf("Enter x1: ");
     x1 = askForUserInput();
     printf("Enter x2: ");
     x2= askForUserInput();
-    
+    // Prompt user for the second point coordinates
     printf("Enter y1: ");
     y1 = askForUserInput();
     printf("Enter y2: ");
@@ -50,8 +50,8 @@ double calculateDistance() {
    
     distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2)); 
     
-    printf("Point #1 : x1 = %.2f\n; x2 = %.2f\n", x1, x2);
-    printf("Point #2 : y1 = %.2f\n; y2 = %.2f\n", y1, y2);
+    printf("Point #1 entered : x1 = %.2f\n; x2 = %.2f\n", x1, x2);
+    printf("Point #2 entered : y1 = %.2f\n; y2 = %.2f\n", y1, y2);
     printf("The distance between the two points is %.2f\n", distance);
 
    return distance;
@@ -78,12 +78,11 @@ double calculateWidth() {
     x2 = askForUserInput();
     
     width = fabs(x2 - x1);
-    
+    // Output the points entered and the calculated width
     printf("Point #1 entered: x1 = %.2f\n", x1);
     printf("Point #2 entered: x2 = %.2f\n", x2);
     printf("The width of the city encompassed by your request is %.2f\n", width);
     
-    // Difficulty rating, adjust as necessary
     return 2.0;
 }
 // Calculate Height 
@@ -96,12 +95,12 @@ double calculateHeight() {
     y2 = askForUserInput();
     
     height = fabs(y2 - y1);
-    
+     // Output the points entered and the calculated Height
     printf("Point #1 entered: y1 = %.2f\n", y1);
     printf("Point #2 entered: y2 = %.2f\n", y2);
     printf("The height of the city encompassed by your request is %.2f\n", height);
     
-    // Difficulty rating, adjust as necessary
+
     return 2.0;
 
 }
@@ -109,7 +108,7 @@ double calculateArea() {
     double width = calculateWidth();
     double height = calculateHeight();
     double area = width * height;
-    
+     // Output the points entered and the calculated Area
     printf("The area of the city encompassed by your request is %.2f\n", area);
     
     return 1.0;
