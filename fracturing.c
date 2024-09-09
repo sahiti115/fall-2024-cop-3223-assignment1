@@ -40,7 +40,7 @@ double calculateDistance() {
     
     printf("Enter x1: ");
     x1 = askForUserInput();
-    printf("Enter x1: ");
+    printf("Enter x2: ");
     x2= askForUserInput();
     
     printf("Enter y1: ");
@@ -50,9 +50,9 @@ double calculateDistance() {
    
     distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2)); 
     
-    printf("Point #1 : x1 = %lf; y1 = %lf\n", x1, y1);
-    printf("Point #2 : x2 = %lf; y2 = %lf\n", x2, y2);
-    printf("The distance between the two points is %lf\n", distance);
+    printf("Point #1 : x1 = %lf; x2 = %lf\n", x1, x2);
+    printf("Point #2 : y1 = %lf; y2 = %lf\n", y1, y2);
+    printf("The distance between the two points is %.2f\n", distance);
 
    return distance;
    
