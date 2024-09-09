@@ -1,3 +1,13 @@
+//********************************************************
+// assignment 1
+// Author: Sahiti Kota
+// Date: 09/08/24
+// Class: COP 3223, Professor Parra
+// Purpose: This program going to be asked to put in the vakues so it can Calculate given measures 
+// Input: x1,x2,y1,y2
+//
+// Output: Distance, Permiter, Area, Width, height, Inout
+// //********************************************************
 #include <stdio.h>
 #include <math.h> 
 
@@ -26,15 +36,15 @@ double askForUserInput() {
 }
 // Calculate distance 
 double calculateDistance() {
-    double x1, y1, x2, y2, distance;
+    double x1, x2, y1, y2, distance;
     
     printf("Enter x1: ");
     x1 = askForUserInput();
+    printf("Enter x1: ");
+    x1 = askForUserInput();
+    
     printf("Enter y1: ");
     y1 = askForUserInput();
-    
-    printf("Enter x2: ");
-    x2 = askForUserInput();
     printf("Enter y2: ");
     y2 = askForUserInput();
    
